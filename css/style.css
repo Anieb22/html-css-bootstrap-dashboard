@@ -35,3 +35,14 @@ body{
     background-color: #051E34;
     background-image: url(../img/sidebar-bg.png);
 }
+
+.size-sidebar{
+    width: 150px;
+    height: 95vh;
+}
+
+@media screen and (max-width: 992px) {
+    .size-sidebar{
+        width: 80px;
+    }
+}

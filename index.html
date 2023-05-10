@@ -15,11 +15,11 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg background-navbar" id="navbar">
+        <nav class="navbar navbar-expand-lg background-navbar fixed-top" id="navbar">
             <div class="container-fluid">
               <a class="navbar-brand" href="#">
                 <img src="./img/logo.svg" alt="Logo" width="150" class="d-lg-block d-none">
-            <img src="./img/mobile-logo.svg" alt="Logo" width="50" class="d-lg-none d-block">
+            <img src="./img/mobile-logo.svg" alt="Logo" width="30" class="d-lg-none d-block">
             </a>
             <form class="d-flex w-bar" role="search">
                 <input class="form-control me-2 background-search" type="search" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Search">
@@ -70,11 +70,47 @@
                     </ul>
                 </div>
             </div>
-
-            </div>
-          </nav>
+        </nav>
     </header>
     <main>
+      <!--SIDEBAR DESKTOP-->
+      <div class="d-flex flex-column p-3 text-white background-navbar-laterale position-fixed mt-5 size-sidebar">
+        <a href="/" class="d-flex align-items-center mb-1 mb-md-0 me-md-auto text-white text-decoration-none">
+        </a>
+        <ul class="nav nav-pills flex-column mb-auto">
+          <li class="nav-item">
+            <a href="#" class="nav-link text-white" aria-current="page">
+              <i class="fas fa-house"></i>
+              <span class="d-lg-inline d-none">Home</span> 
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link text-white">
+              <i class="fa-solid fa-chart-simple"></i>
+              <span class="d-lg-inline d-none">Stats</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link text-white">
+              <i class="fas fa-signal"></i>
+              <span class="d-lg-inline d-none">Signal</span>
+            </a>
+          </li>
+        </ul>
+        <div class="dropdown">
+          <a href="#" class="d-flex align-items-center text-white text-decoration-none" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="fas fa-gear px-3"></i>
+            <span class="d-lg-inline d-none">Admin</span>
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark text-small shadow" aria-labelledby="dropdownUser1">
+            <li><a class="dropdown-item" href="#">New project...</a></li>
+            <li><a class="dropdown-item" href="#">Settings</a></li>
+            <li><a class="dropdown-item" href="#">Profile</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Sign out</a></li>
+          </ul>
+        </div>
+      </div>
     </main>
     <footer></footer>
 </body>
