@@ -41,7 +41,7 @@ body{
     height: 95vh;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
     .size-sidebar{
         width: 80px;
     }
