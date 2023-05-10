@@ -7,3 +7,31 @@
 body{
     font-family: 'Roboto', sans-serif;
 }
+
+.fa-bell{
+    color: #FF8F00;
+}
+.fa-bell:active{
+    color: #be7616;
+}
+
+.w-bar{
+    width: 80%;
+}
+
+.background-navbar{
+    background-color: #F8F9FA;
+}
+
+.background-search{
+    background-color: #E5E5E5;
+}
+
+.border-menu{
+    border: 0;
+}
+
+.background-navbar-laterale{
+    background-color: #051E34;
+    background-image: url(../img/sidebar-bg.png);
+}

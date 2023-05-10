@@ -14,8 +14,68 @@
     <title>Document</title>
 </head>
 <body>
-    <header></header>
-    <main></main>
+    <header>
+        <nav class="navbar navbar-expand-lg background-navbar" id="navbar">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <img src="./img/logo.svg" alt="Logo" width="150" class="d-lg-block d-none">
+            <img src="./img/mobile-logo.svg" alt="Logo" width="50" class="d-lg-none d-block">
+            </a>
+            <form class="d-flex w-bar" role="search">
+                <input class="form-control me-2 background-search" type="search" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Search">
+              </form>
+              <div class="collapse navbar-collapse flex-grow-0">
+                <ul class="navbar-nav me-auto mb-1 m-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active d-none d-md-block" aria-current="page" href="#">
+                        <i class="fas fa-list"></i>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link d-none d-md-block" href="#">
+                        <i class="fa-solid fa-circle-question"></i>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link d-none d-md-block" href="#">
+                        <i class="fas fa-ellipsis-v"></i>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <div class="nav-item dropdown d-block">
+                        <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          <i class="fas fa-bell"></i>
+                        </a>
+                        <div class="collapse navbar-collapse">
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="dropdown d-block d-lg-none">
+                <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="fas fa-bell fa-xl"></i>
+                </a>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            </div>
+          </nav>
+    </header>
+    <main>
+    </main>
     <footer></footer>
 </body>
 </html>
