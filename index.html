@@ -15,13 +15,15 @@
 </head>
 <body>
     <header>
+      <!--NAVBAR-->
         <nav class="navbar navbar-expand-lg background-navbar fixed-top" id="navbar">
             <div class="container-fluid">
               <a class="navbar-brand" href="#">
                 <img src="./img/logo.svg" alt="Logo" width="150" class="d-lg-block d-none">
             <img src="./img/mobile-logo.svg" alt="Logo" width="30" class="d-lg-none d-block">
             </a>
-            <form class="d-flex w-bar" role="search">
+            <form class="d-flex w-bar align-items-center background-search border-radius px-2" role="search">
+              <i class="fas fa-magnifying-glass"></i>
                 <input class="form-control me-2 background-search" type="search" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Search">
               </form>
               <div class="collapse navbar-collapse flex-grow-0">
@@ -71,44 +73,93 @@
                 </div>
             </div>
         </nav>
+      <!--SIDEBAR-->
+            <div class="d-flex flex-column p-3 text-white background-navbar-laterale position-fixed size-sidebar" id="#sidebar">
+              <a href="/" class="d-flex align-items-center mb-1 mb-md-0 me-md-auto text-white text-decoration-none">
+              </a>
+              <ul class="nav nav-pills flex-column mb-auto">
+                <li class="nav-item background-icone">
+                  <a href="#" class="nav-link text-white" aria-current="page">
+                    <i class="fas fa-house"></i>
+                    <span class="d-lg-inline d-none">Home</span> 
+                  </a>
+                </li>
+                <li class="background-icone">
+                  <a href="#" class="nav-link text-white">
+                    <i class="fa-solid fa-chart-simple"></i>
+                    <span class="d-lg-inline d-none">Stats</span>
+                  </a>
+                </li>
+                <li class="background-icone">
+                  <a href="#" class="nav-link text-white">
+                    <i class="fas fa-signal"></i>
+                    <span class="d-lg-inline d-none">Signal</span>
+                  </a>
+                </li>
+              </ul>
+              <div class="dropdown">
+                <a href="#" class="d-flex align-items-center text-white text-decoration-none" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="fas fa-gear px-3"></i>
+                  <span class="d-lg-inline d-none">Admin</span>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark text-small shadow" aria-labelledby="dropdownUser1">
+                  <li><a class="dropdown-item" href="#">New project...</a></li>
+                  <li><a class="dropdown-item" href="#">Settings</a></li>
+                  <li><a class="dropdown-item" href="#">Profile</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Sign out</a></li>
+                </ul>
+              </div>
+            </div>
     </header>
     <main>
-      <!--SIDEBAR DESKTOP-->
-      <div class="d-flex flex-column p-3 text-white background-navbar-laterale position-fixed mt-5 size-sidebar">
-        <a href="/" class="d-flex align-items-center mb-1 mb-md-0 me-md-auto text-white text-decoration-none">
-        </a>
-        <ul class="nav nav-pills flex-column mb-auto">
-          <li class="nav-item">
-            <a href="#" class="nav-link text-white" aria-current="page">
-              <i class="fas fa-house"></i>
-              <span class="d-lg-inline d-none">Home</span> 
-            </a>
-          </li>
-          <li>
-            <a href="#" class="nav-link text-white">
-              <i class="fa-solid fa-chart-simple"></i>
-              <span class="d-lg-inline d-none">Stats</span>
-            </a>
-          </li>
-          <li>
-            <a href="#" class="nav-link text-white">
-              <i class="fas fa-signal"></i>
-              <span class="d-lg-inline d-none">Signal</span>
-            </a>
-          </li>
-        </ul>
-        <div class="dropdown">
-          <a href="#" class="d-flex align-items-center text-white text-decoration-none" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
-            <i class="fas fa-gear px-3"></i>
-            <span class="d-lg-inline d-none">Admin</span>
-          </a>
-          <ul class="dropdown-menu dropdown-menu-dark text-small shadow" aria-labelledby="dropdownUser1">
-            <li><a class="dropdown-item" href="#">New project...</a></li>
-            <li><a class="dropdown-item" href="#">Settings</a></li>
-            <li><a class="dropdown-item" href="#">Profile</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Sign out</a></li>
-          </ul>
+      <!--TOPBAR-->
+      <div class="background-topbar" id="topbar" style="margin-top: 60px;">
+        <div class="contenitore-topbar m-left">
+          <div class="row flex-md-row flex-column py-2 justify-content-between align-items-md-start flex-start">
+            <div class="col-lg-5 col-12">
+              <div class="col-12 text-white" style="height: 50%;">
+                <h1 class="d-inline">Boolean</h1> <span class="label p-1">Piano blaze</span>
+              </div>
+              <div class="col-12 background-topbar text-white" style="height: 50%;">
+                <span class="label p-1">3 app</span>
+                &#187;
+                <span class="label-plus px-1 d-lg-none d-inline">+</span>
+                <span class="label p-1 d-lg-inline d-none">Boolean mobile app</span>
+                <span class="label p-1 d-lg-inline d-none">boolean web app</span>
+                <span class="label p-1 d-lg-inline d-none">boolean blog app</span>
+              </div>
+            </div>
+            <div class="col-lg-4 col-12 py-2">
+              <div class="text-small text-white">studenti online negli ultimi 30 minuti</div>
+              <h1 class="text-white">125</h1>
+            </div>
+            <div class="col-lg-3 col-12 py-2">
+              <h6 class="text-small d-inline text-white">Nuovo studente</h6>
+              <a class="btn btn-primary border border-white" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                <i class="fas fa-plus"></i>
+              </a>              
+              <div class="offcanvas offcanvas-end py-2 order-md-3 order-1" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <div>
+                    Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--CARDS-->
+      <div></div>
+      <div class="container-fluid">
+        <div class="row background-red" style="height: 950px;">
+          <div class="col"></div>
         </div>
       </div>
     </main>

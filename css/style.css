@@ -38,11 +38,62 @@ body{
 
 .size-sidebar{
     width: 150px;
-    height: 95vh;
+    height: 94%;
 }
+
+.background-icone:hover{
+    background-color: rgba(229, 229, 229, 0.5);
+    border-radius: 10px;
+    transition-duration: 0.5s;
+}
+
+.background-green{
+    background-color: green;
+}
+
+.background-red{
+    background-color: red;
+}
+
+.background-topbar{
+    background-color: #1B72E8;
+}
+
+.label{
+    border-radius: 30px;
+    background-color: #165BBA;
+    font-size: 8pt;
+}
+
+.label-plus{
+    border-radius: 50%;
+    background-color: #165BBA;
+    font-size: 8pt;
+}
+
+.m-left{
+    padding-left: 170px;
+}
+
+.border-white{
+    border: 1px solid white;
+}
+
+.border-radius{
+    border-radius: 5px;
+}
+
+.contenitore-topbar{
+    width: 100%;
+}
+
 
 @media screen and (max-width: 991px) {
     .size-sidebar{
         width: 80px;
+    }
+
+    .m-left{
+        padding-left: 100px;
     }
 }
