@@ -87,6 +87,10 @@ body{
     width: 100%;
 }
 
+.m-left-cards{
+    margin-left: 60px;
+}
+
 @media screen and (max-width: 991px) {
     .size-sidebar{
         width: 80px;
@@ -95,4 +99,9 @@ body{
     .m-left{
         padding-left: 100px;
     }
+
+    .m-left-cards{
+        margin-left: 20px;
+    }
+    
 }

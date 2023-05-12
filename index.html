@@ -14,7 +14,7 @@
     <title>Document</title>
 </head>
 <body>
-    <header class="z-3">
+    <header class="z-1">
       <!--NAVBAR-->
         <nav class="navbar navbar-expand-lg background-navbar fixed-top" id="navbar">
             <div class="container-fluid">
@@ -117,7 +117,7 @@
       <div class="background-topbar" id="topbar" style="margin-top: 60px;">
         <div class="contenitore-topbar m-left">
           <div class="row flex-md-row flex-column py-2 justify-content-between align-items-md-start flex-start">
-            <div class="col-lg-5 col-12">
+            <div class="col-lg-5 col-12 order-lg-1 order-2">
               <div class="col-12 text-white" style="height: 50%;">
                 <h1 class="d-inline">Boolean</h1> <span class="label p-1">Piano blaze</span>
               </div>
@@ -130,26 +130,169 @@
                 <span class="label p-1 d-lg-inline d-none">boolean blog app</span>
               </div>
             </div>
-            <div class="col-lg-4 col-12 py-2">
+            <div class="col-lg-4 col-12 py-2 order-lg-2 order-3">
               <div class="text-small text-white">studenti online negli ultimi 30 minuti</div>
               <h1 class="text-white">125</h1>
             </div>
-            <div class="col-lg-3 col-12 py-2">
+            <div class="col-lg-3 col-12 py-2 order-lg-3 order-1">
               <h6 class="text-small d-inline text-white">Nuovo studente</h6>
-              <a class="btn btn-primary border border-white" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+              <a class="btn btn-primary border border-white d-none d-lg-inline" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
                 <i class="fas fa-plus"></i>
-              </a>              
-              <div class="offcanvas offcanvas-end py-2 order-md-3 order-1" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+              </a>
+              <a class="btn btn-primary border border-white d-inline d-lg-none" data-bs-toggle="offcanvas" href="#offcanvasExample2" role="button" aria-controls="offcanvasExample">
+                <i class="fas fa-plus"></i>
+              </a>
+            <!--OFFCANVAS DESKTOP-->              
+              <div class="offcanvas offcanvas-end py-2 order-md-3 order-1 w-50" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
                 <div class="offcanvas-header">
-                  <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+                  <h5 class="offcanvas-title" id="offcanvasExampleLabel">Inserisci nuovo studente</h5>
                   <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body">
+                  <!--NOME-->
                   <div>
-                    Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+                    <form class="row g-3">
+                      <div class="col-md-6">
+                        <label for="inputEmail4" class="form-label">Nome</label>
+                        <input type="text" class="form-control" id="inputname4">
+                      </div>
+                      <!--COGNOME-->
+                      <div class="col-md-6">
+                        <label for="inputPassword4" class="form-label">Cognome</label>
+                        <input type="text" class="form-control" id="inputlastnamed4">
+                      </div>
+                      <!--EMAIL-->
+                      <div class="col-md-6">
+                        <label for="inputEmail4" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="inputEmail4">
+                      </div>
+                      <!--PASSWORD-->
+                      <div class="col-md-6">
+                        <label for="inputPassword4" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="inputPassword4">
+                      </div>
+                      <!--INDIRIZZO-->
+                      <div class="col-12">
+                        <label for="inputAddress" class="form-label">Indirizzo</label>
+                        <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                      </div>
+                      <!--CITTA'-->
+                      <div class="col-md-6">
+                        <label for="inputCity" class="form-label">Città</label>
+                        <input type="text" class="form-control" id="inputCity">
+                      </div>
+                      <!--STATO-->
+                      <div class="col-md-4">
+                        <label for="inputState" class="form-label">Stato</label>
+                        <select id="inputState" class="form-select">
+                          <option selected>Scegli</option>
+                          <option>...</option>
+                        </select>
+                      </div>
+                      <!--CAP-->
+                      <div class="col-md-2">
+                        <label for="inputZip" class="form-label">CAP</label>
+                        <input type="text" class="form-control" id="inputZip">
+                      </div>
+                      <!--FOTO-->
+                      <div class="mb-3">
+                        <label for="formFile" class="form-label">Scegli una foto</label>
+                        <input class="form-control" type="file" id="formFile">
+                      </div>      
+                      <!--CHECKBOX-->                
+                      <div class="col-12">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="gridCheck">
+                          <label class="form-check-label" for="gridCheck">
+                            Seleziona per proseguire
+                          </label>
+                        </div>
+                      </div>
+                      <!--PULSANTI AZIONE-->
+                      <div class="col-12">
+                        <button type="submit" class="btn btn-primary">Salva</button>
+                        <button type="submit" class="btn btn-warning">Svuota</button>
+                      </div>
+                    </form>
                   </div>
                   </div>
                 </div>
+            <!--OFFCANVAS MOBILE-->
+            <div class="offcanvas offcanvas-end py-2 order-md-3 order-1 w-100" tabindex="-1" id="offcanvasExample2" aria-labelledby="offcanvasExampleLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasExampleLabel">Inserisci nuovo studente</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <!--NOME-->
+                <div>
+                  <form class="row g-3">
+                    <div class="col-md-6">
+                      <label for="inputEmail4" class="form-label">Nome</label>
+                      <input type="text" class="form-control" id="inputname4">
+                    </div>
+                    <!--COGNOME-->
+                    <div class="col-md-6">
+                      <label for="inputPassword4" class="form-label">Cognome</label>
+                      <input type="text" class="form-control" id="inputlastnamed4">
+                    </div>
+                    <!--EMAIL-->
+                    <div class="col-md-6">
+                      <label for="inputEmail4" class="form-label">Email</label>
+                      <input type="email" class="form-control" id="inputEmail4">
+                    </div>
+                    <!--PASSWORD-->
+                    <div class="col-md-6">
+                      <label for="inputPassword4" class="form-label">Password</label>
+                      <input type="password" class="form-control" id="inputPassword4">
+                    </div>
+                    <!--INDIRIZZO-->
+                    <div class="col-12">
+                      <label for="inputAddress" class="form-label">Indirizzo</label>
+                      <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                    </div>
+                    <!--CITTA'-->
+                    <div class="col-md-6">
+                      <label for="inputCity" class="form-label">Città</label>
+                      <input type="text" class="form-control" id="inputCity">
+                    </div>
+                    <!--STATO-->
+                    <div class="col-md-4">
+                      <label for="inputState" class="form-label">Stato</label>
+                      <select id="inputState" class="form-select">
+                        <option selected>Scegli</option>
+                        <option>...</option>
+                      </select>
+                    </div>
+                    <!--CAP-->
+                    <div class="col-md-2">
+                      <label for="inputZip" class="form-label">CAP</label>
+                      <input type="text" class="form-control" id="inputZip">
+                    </div>
+                    <!--FOTO-->
+                    <div class="mb-3">
+                      <label for="formFile" class="form-label">Scegli una foto</label>
+                      <input class="form-control" type="file" id="formFile">
+                    </div>      
+                    <!--CHECKBOX-->                
+                    <div class="col-12">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">
+                          Seleziona per proseguire
+                        </label>
+                      </div>
+                    </div>
+                    <!--PULSANTI AZIONE-->
+                    <div class="col-12">
+                      <button type="submit" class="btn btn-primary">Salva</button>
+                      <button type="submit" class="btn btn-warning">Svuota</button>
+                    </div>
+                  </form>
+                </div>
+                </div>
+              </div>
+
               </div>
             </div>
           </div>
@@ -157,7 +300,7 @@
       </div>
       <!--CARDS-->
       <div class="container-fluid">
-        <div class="row d-flex justify-content-end">
+        <div class="row d-flex justify-content-end m-left-cards">
           <div class="col-lg-7 col-11 p-3">
             <div class="card w-100">
               <div class="card-header">
